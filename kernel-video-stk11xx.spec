@@ -1,13 +1,14 @@
+#
 # Conditional build:
 %bcond_without	dist_kernel	# allow non-distribution kernel
 %bcond_with	verbose		# verbose build (V=1)
-
+#
 %define		_modname	stk11xx
 %define		_snap	20070331
 %define		_rel	0.%{_snap}.1
 
 Summary:	Syntek camera driver for Linux
-Summary(pl.UTF-8):	Sterownik kamer firmy Syntek dla Linuksa
+Summary(pl.UTF-8):	Sterownik do kamer firmy Syntek dla Linuksa
 Name:		kernel%{_alt_kernel}-video-%{_modname}
 Version:	0.0.1
 Release:	%{_rel}@%{_kernel_ver_str}
@@ -32,8 +33,8 @@ if you know what you are doing.
 
 %description -l pl.UTF-8
 Wersja rozwojowa sterownika dla kamer USB DC-1125 i STK-1135 firmy
-Syntek. Sterownik ten może uszkodzić Twój sprzęt, używaj go tylko
-wtedy, gdy wiesz co robisz.
+Syntek. Sterownik ten może uszkodzić sprzęt, należy używać go tylko
+wtedy, gdy się wie, co się robi.
 
 %prep
 %setup -q -n %{_modname}-%{_snap}
