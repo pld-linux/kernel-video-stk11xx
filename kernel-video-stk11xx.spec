@@ -17,7 +17,7 @@ Group:		Base/Kernel
 Source0:	%{_modname}-%{_snap}.tar.bz2
 # Source0-md5:	5067983a2cf7cc5b3107a6e6d0c6824b
 URL:		http://syntekdriver.sourceforge.net/
-%{?with_dist_kernel:BuildRequires:	kernel%{_alt_kernel}-module-build >= 3:2.6.19}
+%{?with_dist_kernel:BuildRequires:	kernel%{_alt_kernel}-module-build >= 3:2.6.20.2}
 BuildRequires:	rpmbuild(macros) >= 1.379
 Requires(post,postun):	/sbin/depmod
 %if %{with dist_kernel}
