@@ -9,12 +9,12 @@
 Summary:	Syntek camera driver for Linux
 Summary(pl.UTF-8):	Sterownik do kamer firmy Syntek dla Linuksa
 Name:		kernel%{_alt_kernel}-video-%{_modname}
-Version:	1.1.0
+Version:	1.2.1
 Release:	%{_rel}@%{_kernel_ver_str}
 License:	GPL
 Group:		Base/Kernel
 Source0:	http://dl.sourceforge.net/syntekdriver/%{_modname}-%{version}.tar.gz
-# Source0-md5:	edd7a42fcd9d7a3f51143abce8f56418
+# Source0-md5:	49e4e7ee772f5c5757e14e4f84102253
 URL:		http://syntekdriver.sourceforge.net/
 %{?with_dist_kernel:BuildRequires:	kernel%{_alt_kernel}-module-build >= 3:2.6.20.2}
 BuildRequires:	rpmbuild(macros) >= 1.379
