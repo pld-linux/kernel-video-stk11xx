@@ -4,7 +4,7 @@
 %bcond_with	verbose		# verbose build (V=1)
 #
 %define		_modname	stk11xx
-%define		_rel	1
+%define		_rel	2
 
 Summary:	Syntek camera driver for Linux
 Summary(pl.UTF-8):	Sterownik do kamer firmy Syntek dla Linuksa
@@ -44,7 +44,7 @@ wtedy, gdy się wie, co się robi.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%install_kernel_modules -m %{_modname} -d video
+%install_kernel_modules -m %{_modname} -d kernel/drivers/video 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-/lib/modules/%{_kernel_ver}/video/%{_modname}*
+/lib/modules/%{_kernel_ver}/kernel/drivers/video/%{_modname}.ko*
