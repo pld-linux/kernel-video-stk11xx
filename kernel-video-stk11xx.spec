@@ -4,7 +4,7 @@
 %bcond_with	verbose		# verbose build (V=1)
 #
 %define		_modname	stk11xx
-%define		_rel	4
+%define		_rel	5
 
 Summary:	Syntek camera driver for Linux
 Summary(pl.UTF-8):	Sterownik do kamer firmy Syntek dla Linuksa
