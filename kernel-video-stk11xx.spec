@@ -4,17 +4,17 @@
 %bcond_with	verbose		# verbose build (V=1)
 #
 %define		_modname	stk11xx
-%define		_rel	5
+%define		_rel	1
 
 Summary:	Syntek camera driver for Linux
 Summary(pl.UTF-8):	Sterownik do kamer firmy Syntek dla Linuksa
 Name:		kernel%{_alt_kernel}-video-%{_modname}
-Version:	1.3.1
+Version:	1.4.0
 Release:	%{_rel}@%{_kernel_ver_str}
 License:	GPL
 Group:		Base/Kernel
 Source0:	http://dl.sourceforge.net/syntekdriver/%{_modname}-%{version}.tar.gz
-# Source0-md5:	d57748fe9b54879f495a1a2e42c1b75d
+# Source0-md5:	af7697d371360205cceffe501d72ef0d
 URL:		http://syntekdriver.sourceforge.net/
 %{?with_dist_kernel:BuildRequires:	kernel%{_alt_kernel}-module-build >= 3:2.6.20.2}
 BuildRequires:	rpmbuild(macros) >= 1.379
