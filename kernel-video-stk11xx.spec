@@ -5,7 +5,7 @@
 #
 %define		_modname	stk11xx
 %define		_rel	1
-%define		snap	20100924
+%define		snap	20110613
 Summary:	Syntek camera driver for Linux
 Summary(pl.UTF-8):	Sterownik do kamer firmy Syntek dla Linuksa
 Name:		kernel%{_alt_kernel}-video-%{_modname}
@@ -15,7 +15,7 @@ License:	GPL
 Group:		Base/Kernel
 #Source0:	http://dl.sourceforge.net/syntekdriver/%{_modname}-%{version}.tar.gz
 Source0:	%{_modname}-%{snap}.tar.gz
-# Source0-md5:	7e2ad585e91e4f2c63ab86dbf26d4f3d
+# Source0-md5:	1f9f33033c893bdb215e5085d57bf831
 URL:		http://syntekdriver.sourceforge.net/
 %{?with_dist_kernel:BuildRequires:	kernel%{_alt_kernel}-module-build >= 3:2.6.34}
 BuildRequires:	rpmbuild(macros) >= 1.379
